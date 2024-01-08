@@ -25,6 +25,10 @@ textarea{
     font-size: 18px;
     font-weight: 400;
 }
+input:hover,
+textarea:hover{
+    background-color: beige;
+}
 .contact-form input {
     height: 100%;
 }
