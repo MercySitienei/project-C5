@@ -1,0 +1,189 @@
+.contact{
+    background-image: url('../img/contactbg.svg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    height: 1128px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px 30px 20px;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35%;
+}
+input,
+textarea{
+    width: 100%;
+    margin: 8px 0;
+    outline: none;
+    padding-left: 70px;
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact-form input {
+    height: 100%;
+}
+.contact-form textarea{
+    height: 202px;
+}
+.contact-form {
+    position: relative;
+    height: 55px;
+}
+
+.form-icon {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 14px 14px;
+    background-color: #3F596C;
+    width: 50px;
+    height: 55px;
+}
+.user-info {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactbtn {
+    margin-top: 130px;
+}
+.appointmentbtn {
+    border-radius: 5px;
+    width: 146px;
+    height: 38px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Merriweather;
+    background-color: #C82424;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+.contacttitle,
+.contactnumber {
+    font-size: 18px;
+    font-weight: 400;
+}
+.phone-details,
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 13px;
+}
+
+.contactdsec {
+    font-size: 13px;
+    font-weight: 400;
+}
+.contactphone,
+.socialtitle {
+    font-size: 15px;
+    font-weight: 400;
+}
+.contactphone span,
+.socialtitle span{
+    border-bottom: 2.5px solid #C82424;
+    padding-bottom: 10px;
+}
+.social-icon {
+    width: 15px;
+    height: 15px;
+    color: #C82424;
+}   
+.social-iconcontainer{
+    border: 0.px solid #000000;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+} 
+.socialtitle{
+    margin-top: 10px;
+}
+legend{
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* tablet screen view */
+@media (min-width:601px) and (max-width:900px){
+    .contacttitle{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .contact{
+        height: 1035px;
+    }
+    .contactdesc{
+        padding-left: 30px;
+    }
+    .contactbtn {
+        margin-top: 140px;
+    }
+    .contact-us{
+        height: 45%;
+    }
+}
+/* tablet and desctop screen */
+@media (min-width:601px){
+    .user-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 25px;
+    }
+    .user-info :nth-child(6){
+        grid-column: span 2;
+    }
+}
+/* desctop screen */
+ 
+@media (min-width:901px) {
+    .contacttitle{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .contact{
+        width: 1280px;
+        height: 707px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding-top: 95px;
+    }
+    .user-info{
+        padding-right: 25px;
+    }
+    .contact-us{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+    .contact-us :nth-child(1){
+        grid-column: span 2;
+    }
+    .contact-us :nth-child(2){
+        grid-column: span 2;
+    }
+    .contactbtn {
+        margin-top: 160px;
+    }
+    .appointmentbtn {
+        width: 192px;
+        height: 46px;
+        font-size: 14px;
+    }    
+}

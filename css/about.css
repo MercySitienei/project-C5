@@ -1,0 +1,87 @@
+.aboutimg{
+    margin: 10px;
+    padding: 10px;
+    width: 390px;
+    height: 353.656px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.aboutcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 600px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.aboutlist ul{
+    list-style: url('../img/checksquare.svg');
+    list-style-position: inside;
+    width: 286px;
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 237px;
+}
+.abouttitle {
+    width: 55px;
+    height: 25px;
+    color: #6C6C6C;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 2.5px solid #C82424;
+}
+.aboutdesc {
+    
+    color: #6C6C6C;
+    font-size: 13px;
+    font-weight: 400;
+}
+.abouttext {
+    height: 69px;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+}
+.abouttext span{
+    color: #C82424;
+}
+.freeconsultingbtn {
+    border-radius: 5px;
+    width: 124px;
+    height: 38px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Merriweather;
+    background-color: #C82424;
+    border: none;
+    padding: 10px;
+    
+}
+@media (min-width:601px) and (max-width:900px) {
+    .aboutimg {
+        width: 778px;
+        height: 703.685px;
+    }
+}
+@media (min-width:901px){
+    .aboutimg {
+        width: 573px;
+        height: 558px;
+        
+    }
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 1280px;
+        
+    }
+}

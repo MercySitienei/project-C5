@@ -1,0 +1,128 @@
+footer{
+    background-color: #0F3041;
+    color: #FFFFFF;
+    height: 1151px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.footermailtext span,
+.footerphonetext span,
+.footerlocationtext span{
+    font-size: 14px;
+    margin-left: 6px;
+    font-weight: 400;
+}
+.footer-contact{
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    
+}
+.footermailtext, .footerphonetext, .footerlocationtext{
+    display: flex;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    border-top: 0.6px solid #F9F9F9;
+}
+.footer-contact h4 span{
+    border-bottom: 2.5px solid #C82424;
+    padding-bottom: 7px;
+}
+.footer-contact h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.whitelogo{
+    padding-left: 20px;
+}
+.footertext{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 20px 0px 20px;
+}
+.quick-links,
+.services {
+    padding: 0px 20px;
+}
+.socialicons {
+    padding-left: 20px;
+}
+footer ol{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 160px;
+    
+}
+.quick-links h4,
+.services h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.quick-links h4 span,
+.services h4 span{
+    border-bottom: 2.5px solid #C82424;
+    padding-bottom: 7px;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+}
+/* tablet screen view */
+@media (min-width:601px) and (max-width:900px) {
+    footer{
+        display: grid;
+        grid-template-columns: 400px 300px;
+        padding-top: 50px;
+        width: 900px;
+        height: 750px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        height: 350px;
+    }
+    footer :last-child {
+        grid-column: span 2;
+    }
+    /* desctop screen */
+}
+@media (min-width:901px) {
+    footer {
+        display: grid;
+        grid-template-columns: 380px 160px 140px 250px;
+        padding-top: 50px;
+        height: 519px;
+        width: 1280px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        height: 350px;
+    }
+    footer :last-child {
+        grid-column: span 4;
+    }
+    
+}

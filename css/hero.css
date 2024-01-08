@@ -1,0 +1,80 @@
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url('../img/hero.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+/* pseudo elements for hero overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.herotitle,
+.herotext,
+.herodesc {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+    padding: 50px;
+}
+.herotext h2 {
+    font-size: 22px;
+}
+.herodesc {
+    font-size: 12px;
+}
+.herotitle {
+    border-bottom: 3px solid #c82424;
+    padding-bottom: 10px;
+    width: 106px;
+}
+.herobtn {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    color: white;
+    font-family: Merriweather;
+    font-size: 12px;
+}
+.freeconsulting {
+    background-color: #c82424;
+    margin-left: 50px;
+    border: none;
+    padding: 10px;
+}
+.learnmore {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    margin-left: 10px;
+}
+/* tablet screen */
+@media (min-width:601px) and (max-width:900px) {
+    .herocontent {
+        width: 60%;
+        height: 280px;
+    }
+}
+/* desctop screen */
+@media (min-width:901px){
+    .herocontent {
+        width: 60%;
+        height: 250px;
+    }
+    .hero{
+        width: 1280px;
+    }
+}

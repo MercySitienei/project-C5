@@ -1,0 +1,81 @@
+
+.videodescription{
+    background-color: #C82424;
+    border-radius: 5px;
+    margin: 33px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 423px;
+    padding: 10px;
+}
+.desctitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.desccontent {
+    color: #F4D3D5;
+    font-size: 14px;
+    font-weight: 400;
+}
+.signature{
+    width: 96px;
+    height: 39px;
+}
+.descname{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.desctitle {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+.video {
+    height: 325px;
+    background-image: url('../img/videoimg.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 32px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoicon{
+    width: 80px;
+    height: 80px;
+}
+/* desctop screen */
+@media (min-width:901px){
+    .videosec {
+        display: flex;
+        margin: 80px 27px;
+        position: relative; 
+        /* width: 1280px;  */
+    }
+    .video {
+        width: 64%;
+        height: 517px;
+        left: 60%;
+        top: 0;
+        margin: 0px 26px 0px 0px;
+        position: absolute;   
+    }
+    .videodescription {
+        width: 63%;
+        height: 480px;
+        margin: 18px 0px;
+        z-index: 9;    
+    }
+}
+/* tablet screen */
+@media (min-width:601px) and (max-width:900px){
+    .videosec{
+        margin: 60px;
+        padding-right: 85px;
+    }
+}
